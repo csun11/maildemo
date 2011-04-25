@@ -1,0 +1,2 @@
+module ScmailsHelper
+end

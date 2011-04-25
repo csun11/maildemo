@@ -1,0 +1,29 @@
+<%= form_for(@scmail) do |f| %>
+  <% if @scmail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@scmail.errors.count, "error") %> prohibited this scmail from being saved:</h2>
+
+      <ul>
+      <% @scmail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :recipient %><br />
+    <%= f.text_field :recipient %>
+  </div>
+  <div class="field">
+    <%= f.label :sendto %><br />
+    <%= f.text_field :sendto %>
+  </div>
+  <div class="field">
+    <%= f.label :tosendat %><br />
+    <%= f.text_field :tosendat %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

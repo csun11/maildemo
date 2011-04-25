@@ -1,0 +1,27 @@
+<h1>Listing scmails</h1>
+
+<table>
+  <tr>
+    <th>Recipient</th>
+    <th>Sendto</th>
+    <th>Tosendat</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scmails.each do |scmail| %>
+  <tr>
+    <td><%= scmail.recipient %></td>
+    <td><%= scmail.sendto %></td>
+    <td><%= scmail.tosendat %></td>
+    <td><%= link_to 'Show', scmail %></td>
+    <td><%= link_to 'Edit', edit_scmail_path(scmail) %></td>
+    <td><%= link_to 'Destroy', scmail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Scmail', new_scmail_path %>

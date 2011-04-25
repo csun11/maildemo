@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Recipient:</b>
+  <%= @scmail.recipient %>
+</p>
+
+<p>
+  <b>Sendto:</b>
+  <%= @scmail.sendto %>
+</p>
+
+<p>
+  <b>Tosendat:</b>
+  <%= @scmail.tosendat %>
+</p>
+
+
+<%= link_to 'Edit', edit_scmail_path(@scmail) %> |
+<%= link_to 'Back', scmails_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  recipient: MyString
+  sendto: MyString
+  tosendat: MyString
+
+two:
+  recipient: MyString
+  sendto: MyString
+  tosendat: MyString
